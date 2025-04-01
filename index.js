@@ -4,9 +4,10 @@ import { getDatabase,
          push,
          onValue,
          remove } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-database.js"
+import { config } from './config.js'
 
 const firebaseConfig = {
-    databaseURL: "https://leads-tracker-app-c1137-default-rtdb.asia-southeast1.firebasedatabase.app/"
+    databaseURL: config.database_url
 }
 
 const app = initializeApp(firebaseConfig)
